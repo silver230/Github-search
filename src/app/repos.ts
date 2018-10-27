@@ -1,4 +1,5 @@
 export class Repos {
-    constructor(public name: string, public html_url: any, public description: any, public updated_at:Date) {
-    }
+  constructor(public name:string,public description:string,public html_url:string,public created_at:Date,public updated_at:Date,public homepage:string) {
+
+  }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { LandingPageService } from '../service/landing-page.service';
-import { Users } from '../user';
+import { User } from '../user';
 import { Repos } from '../repos';
 
 @Component({
@@ -14,7 +14,7 @@ export class LandingPageComponent implements OnInit {
 
 public username = '';
 repos:Repos;
-user:Users;
+user:User;
 
   constructor( private LandingPageService:LandingPageService, public repositoryService:LandingPageService)  { }
 

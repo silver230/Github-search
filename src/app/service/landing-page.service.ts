@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { Users } from '../user';
+import {environment} from '../../environments/environment'
+import { User } from '../user';
 import { Repos } from '../repos';
 
 @Injectable({
@@ -71,7 +72,7 @@ getLandingPageRepo(username){
   const promise =new Promise((resolve,reject)=>{
     this.http.get<ApiResponse>(environment.apiUrl + username + environment.repoapikey).toPromise().then(response => {
 
-      this.repo=response;
+      this.repos=response;
 
 
       resolve()

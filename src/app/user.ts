@@ -1,6 +1,6 @@
-export class Users {
-    constructor(public Name: string,public html_url: any,public avatar_url,public public_repos: any,public repo_url: any, public created_at:Date) {
+import { Url } from "url";
 
+export class User {
+  constructor(public name:string, public login: string, public avatar_url:string,public public_repos:number,public followers:string,public following:string,public email:string,public location:string,public html_url:string,public repos_url:string,public created_at:Date){
+  }
 }
-}
-
