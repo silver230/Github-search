@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { GithubServiceService } from './github-service.service';
+import { LandingPageService } from './landing-page.service';
 
-describe('GithubServiceService', () => {
+describe('LandingPageService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: GithubServiceService = TestBed.get(GithubServiceService);
+    const service: LandingPageService = TestBed.get(LandingPageService);
     expect(service).toBeTruthy();
   });
 });
