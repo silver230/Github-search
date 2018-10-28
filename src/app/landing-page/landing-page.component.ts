@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { LandingPageService } from '../service/landing-page.service';
 import { User } from '../user';
 import { Repos } from '../repos';
@@ -23,7 +23,7 @@ user:User;
     this.user = this.LandingPageService.user
 
     this.repositoryService.getLandingPageRepo(this.username);
-    this.user = this.repositoryService.user;
+    this.repos = this.repositoryService.repos;
   }
 
 }
