@@ -1,1 +1,9 @@
-
+  h1{
+      text-align: center;
+  }
+  .jumbotron{
+      background-color:yellowgreen;
+  }
+  body{
+      background-color :rebeccapurple;
+  }
