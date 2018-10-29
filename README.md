@@ -1,3 +1,32 @@
+# GitHub-Search
+
+## Author
+SYLVESTER OMONDI
+
+## Description
+ Its aan application of its own inthat it helps you to find your own github page easily an efficiently.
+
+
+## Installation
+To start using this project use the following commands:
+
+git clone https://github.com/silver230/Github-search.git
+
+cd GitHub-search
+
+you can use any editor of your choise i.e Atom, Visual Studio.
+
+This requires you to have a command line.like the Terminal where you can code in the above commands.
+
+ 
+
+## Technologies Used
+This project was generated with Angular CLI version 6.2.0
+HTML
+CSS
+Bootstrap
+
+ 
 # GithubSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
