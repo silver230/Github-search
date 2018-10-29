@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { NgProgressModule } from '@ngx-progressbar/core';
-// import { NgProgressHttpModule } from '@ngx-progressbar/http';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingPageService } from './service/landing-page.service';
+
+
 
 
 import { AppComponent } from './app.component';
@@ -13,20 +13,21 @@ import { ReposComponent } from './repos/repos.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import {FormsModule} from '@angular/forms';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     DateCountPipe,
     ReposComponent,
-    SearchFormComponent
+    SearchFormComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    // NgProgressModule.forRoot(),
-    // NgProgressHttpModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [LandingPageService],
   bootstrap: [AppComponent]

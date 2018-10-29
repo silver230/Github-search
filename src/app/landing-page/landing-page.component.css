@@ -2,8 +2,7 @@
       text-align: center;
   }
   .jumbotron{
-      background-color:yellowgreen;
-  }
-  body{
-      background-color :rebeccapurple;
+      background-color:yellowgreen}
+  button{
+     align-items: right;
   }

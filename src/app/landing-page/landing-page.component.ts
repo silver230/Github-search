@@ -7,7 +7,7 @@ import { Repos } from '../repos';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  providers:[LandingPageService],
+  providers: [ LandingPageService],
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
@@ -20,7 +20,7 @@ user:User;
 
   ngOnInit() {
     this.LandingPageService.getLandingPageInfo(this.username);
-    this.user = this.LandingPageService.user
+    this.user = this.LandingPageService.user;
 
     this.repositoryService.getLandingPageRepo(this.username);
     this.repos = this.repositoryService.repos;
