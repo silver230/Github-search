@@ -1,9 +1,12 @@
  
-.col-sm-10{
-    background-color:red;
-}
+/* .col-sm-10{
+    background-color:yellowgreen;
+} */
 ::placeholder{
     color: black;
     font-size: 25px;
     font-family: 'Oleo Script', cursive;
+  }
+  input{
+      background-color: yellowgreen;
   }

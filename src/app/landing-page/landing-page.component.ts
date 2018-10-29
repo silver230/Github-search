@@ -16,11 +16,11 @@ public username = '';
 repos:Repos;
 user:User;
 
-  constructor( private LandingPageService:LandingPageService, public repositoryService:LandingPageService)  { }
+  constructor( private LandingService:LandingPageService, public repositoryService:LandingPageService)  { }
 
   ngOnInit() {
-    this.LandingPageService.getLandingPageInfo(this.username);
-    this.user = this.LandingPageService.user;
+    this.LandingService.getLandingPageInfo(this.username);
+    this.user = this.LandingService.user;
 
     this.repositoryService.getLandingPageRepo(this.username);
     this.repos = this.repositoryService.repos;

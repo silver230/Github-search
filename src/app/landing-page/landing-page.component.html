@@ -1,7 +1,7 @@
 
+
   <div class="container-fluid">
   <br>
-  <!-- <ng-progress></ng-progress> -->
   <div class="jumbotron">
   <h1 class="header">Github Search</h1>
   <hr>
@@ -26,12 +26,12 @@
   <div *ngIf="user">
     <div class="panel panel-default">
       <div class="panel-heading" id="heading">
-        <p class="names"><span class="glyphicon glyphicon-user"></span> &nbsp; {{user.login}} &nbsp;<small>({{user.name}})</small></p>
+        <p class="names"><span class="glyphicon glyphicon-user"></span> {{user.login}} <small>({{user.name}})</small></p>
       </div>
       <div class="panel-body" id="body">
         <div class="row">
           <div class="col-sm-6">
-            <img src="{{user.avatar_url}}" class="img-circle" alt="">
+            <img src="{{user.avatar_url}}" class="img" alt="">
           </div>
           <div class="col-sm-6">
             <ul class="list-group" id="email">
@@ -39,20 +39,21 @@
               <li class="list-group-item" *ngIf="user.location" id="emailocation">Location: <b>{{user.location}}</b></li>
               <li class="list-group-item" *ngIf="user.created_at" id="emailocation">Account created on: <b>{{user.created_at | date}}</b></li>
             </ul>
+            <a href="{{user.html_url}}" target="_blank" class="btn btn-danger btn-sm  ml-auto"  
+            id="view"> VIEW ALL <span class="glyphicon glyphicon-share-alt"></span></a>
+           <br>
           </div>
-              <a href="{{user.html_url}}" target="_blank" class="btn btn-danger btn-sm  ml-auto"  
-               id="view"> VIEW ALL &nbsp; <span class="glyphicon glyphicon-share-alt"></span></a>
-              <br>
+           
 
-                <div class="panel-body" *ngFor="let repo of repositoryService.repo ; let i = index">
+                <div clas s="panel-body" *ngFor="let repo of repositoryService.repo ; let i = index">
                   <p class="clearfix">
                     <span class="reposs"> {{repositoryService.repo[i].name}} </span>
                   </p>
                   <p class="description">{{repositoryService.repo[i].description}}</p>
                   <br>
-                  <p class="creation-date"><b class="dates">Date created:</b> &nbsp;  <b>{{repositoryService.repo[i].created_at|date}}</b></p>
+                  <p class="creation-date"><b class="dates">Date created:</b>  <b>{{repositoryService.repo[i].created_at|date}}</b></p>
                   <br>
-                  <p class="update-date"><b class="dates">Updated on:</b> &nbsp;   <b>{{repositoryService.repo[i].updated_at|date}}</b></p>
+                  <p class="update-date"><b class="dates">Updated on:</b><b>{{repositoryService.repo[i].updated_at|date}}</b></p>
                   <br>
                   <a href="{{repositoryService.repo[i].html_url}}" target="_blank" class="btn btn-sm btn-warning pull-right buttons">View this project on Github &nbsp;<span class="glyphicon glyphicon-share-alt"></span></a>
                   <br>
@@ -66,3 +67,4 @@
       </div>
     </div>
   </div>
+
